@@ -4,7 +4,7 @@ import MenuItem from './MenuItem'
 
 function Menu() {
   const menu =useLoaderData()
-if(menu.length===0) return <h1>Loading.....</h1>
+
   return <ul>
     {menu.map(pizza=> <MenuItem pizza={pizza} key={pizza.id} />)}
   </ul>
